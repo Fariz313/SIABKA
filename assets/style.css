@@ -1,0 +1,204 @@
+body {
+    min-width: 100vw;
+    background: rgb(138, 198, 126);
+    background: linear-gradient(128deg,
+            rgba(138, 198, 126, 1) 0%,
+            rgba(57, 181, 157, 1) 100%);
+}
+
+
+.container-center {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    /* Set the container height to 100% of the viewport height */
+
+    overflow: hidden;
+}
+
+/* config.css */
+
+
+
+/* helpers/align.css */
+
+.align {
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+}
+
+.grid {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+}
+
+/* helpers/hidden.css */
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.icons {
+    display: none;
+}
+
+.icon {
+    height: 1em;
+    display: inline-block;
+    fill: #606468;
+    fill: var(--iconFill);
+    width: 1em;
+    vertical-align: middle;
+}
+
+.form {
+    display: grid;
+    grid-gap: 0.875rem;
+    gap: 0.875rem;
+    grid-gap: var(--formGap);
+    gap: var(--formGap);
+}
+
+.form input[type='password'],
+.form input[type='text'],
+.form input[type='submit'] {
+    width: 100%;
+}
+
+.form__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* padding: 10px; */
+    overflow: hidden;
+    border-radius: 100px !important;
+
+}
+
+.form__field label {
+    margin-bottom: 0 !important;
+}
+
+.form__input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.login {
+    color: #eee;
+    color: var(--loginColor);
+}
+
+.login label,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+    border-radius: 0.25rem;
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+}
+
+.login label {
+    background-color: #cfcfcf;
+    background-color: var(--whiteSecond);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+    background-color: #ffffff;
+    background-color: var(--whitePrime);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.login input[type='password']:focus,
+.login input[type='password']:hover,
+.login input[type='text']:focus,
+.login input[type='text']:hover {
+    background-color: var(--whitePrime);
+    background-color: var(--loginInputHoverBackgroundColor);
+}
+
+.login input[type='submit'] {
+    background-color: #ea4c88;
+    background-color: var(--loginSubmitBackgroundColor);
+    color: #eee;
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+    background-color: #d44179;
+    background-color: var(--loginSubmitHoverBackgroundColor);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: var(--whitePrime);
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px var(--whitePrime);
+}
+
+input {
+    border: 0 !important;
+}
+
+.logo-bg {
+    background-image: url('@/assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.profile-bg {
+    background-image: url('@/assets/profile.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.profile-photo{
+    border-radius: 100%;
+    object-fit: cover;
+}
+.bottom-flex {
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.p-card{
+    font-size: 0.75rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
