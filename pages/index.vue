@@ -15,7 +15,7 @@
     </div>
     <div class="row align-items-center w-100">
       <div class="col-md-6 offset-md-3">
-        <form class="form" @submit.prevent="">
+        <form class="form login" @submit.prevent="">
           <div class="form__field mb-3">
             <label for="login__username"
               ><svg class="icon">
@@ -50,7 +50,7 @@
           </div>
 
           <div class="form__field">
-            <button type="submit" value="Sign In" />
+            <nuxt-link to="/menu" class="input-submit text-center" type="submit" value="Sign In" >Masuk</nuxt-link>
           </div>
         </form>
       </div>
